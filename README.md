@@ -72,7 +72,7 @@ and the system won't further process it.
 The project also contains a working copy of the log chainer. The ZIP version contains a functional launcher, the JAR file
 of the log chainer, the properties file, and an XML configuration file.
 
-## Use
+## Use cases
 
 Here are two example case of use for the logchainer application: 
 
@@ -95,7 +95,9 @@ All external configuration files are given in the downloaded ZIP file. These fil
 
 ## Execution
 
-You can run the project from anywhere. However, you will have to create all necessary directories before launching. Also, you must use a 1.8+ version of the JVM.
+You can run the project from anywhere. However, you will have to create all necessary directories before launching.
+Also, you must use a 1.8 version of the JDK ; if you want to use a more recent version of the JDK, such as
+JDK 11 or JDK 17, you will have at the very least to update the version of the `jaxb2-maven-plugin`.
 
 ## Launcher
 
