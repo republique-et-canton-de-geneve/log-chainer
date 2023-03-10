@@ -49,6 +49,23 @@
 				<javadoc.opts>-Xdoclint:none</javadoc.opts>
 			</properties>
 		</profile>
+		<profile>
+			<!-- Profile with access to the Nexus repository of Etat de Geneve -->
+			<id>etat-de-geneve</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<distributionManagement>
+				<repository>
+					<id>internal.project.release</id>
+					<url>${maven2Repository_projet}/project_release</url>
+				</repository>
+				<snapshotRepository>
+					<id>internal.project.snapshot</id>
+					<url>${maven2Repository_projet}/project_snapshot</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
 	</profiles>
 
 	<build>
@@ -214,4 +231,5 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 </project>
